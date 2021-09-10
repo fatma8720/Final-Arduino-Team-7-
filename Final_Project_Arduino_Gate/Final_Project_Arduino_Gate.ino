@@ -25,7 +25,7 @@ void loop() {
       digitalWrite(MOTOR1,HIGH);
       digitalWrite(MOTOR2,LOW);
     }else{
-      value = map(700, 512, 1023, 0, 255);
+      value = map(200, 512, 1023, 0, 255);
       Serial.println(value);
       analogWrite(EN,value);
       digitalWrite(MOTOR1,LOW);
